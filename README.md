@@ -3,4 +3,4 @@ Compulsory facut complet, ca si exemplu se pun 3 poze si un video (link de youtu
 path-ul este d:/media/...
 aici ar trebui sa se afle/puna catalog-ul
 imaginile se afla in folderul d:/media/examples/
-este incarcat si folderul cu poze (examples)
+este incarcat si folderul cu poze (media/examples)
