@@ -6,7 +6,6 @@ import CustomExceptions.InvalidCommandException;
 
 import java.io.*;
 import java.net.URISyntaxException;
-import java.util.Arrays;
 
 import static java.lang.Thread.sleep;
 
@@ -14,11 +13,10 @@ public class Shell {
     private String commandLine;
     private final BufferedReader console = new BufferedReader
             (new InputStreamReader(System.in));
-    private Catalog myCatalog;
+    private Catalog myCatalog = new Catalog("Shell Catalog","d:/media/catalog.ser");
     public void execute() {
         System.out.println("Welcome to the shell! Use info to see available commands ");
 
-        Catalog myCatalog = new Catalog("Shell Catalog","d:/media/catalog.ser");
         while(true)
         {
             System.out.print("Shell: ");
