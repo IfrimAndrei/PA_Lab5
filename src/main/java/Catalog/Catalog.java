@@ -70,5 +70,11 @@ public class Catalog implements Serializable {
         }
         throw new InvalidNameException( new Exception() );
     }
+    public void list()
+    {
+        System.out.println("Itemele din catalog sunt: ");
+        for(Item i : items)
+            System.out.println( i.toString());
+    }
 }
 

@@ -1,4 +1,5 @@
 import Catalog.Catalog;
+import CustomExceptions.ArgumentsException;
 import CustomExceptions.InvalidCatalogException;
 import CustomExceptions.InvalidNameException;
 import MediaItems.Image;
@@ -7,7 +8,11 @@ import Catalog.CatalogUtil;
 import java.io.IOException;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args){
+        Shell myShell = new Shell();
+        myShell.execute();
+
+         /*
         Main app = new Main();
         try {
             app.testCreateSave();
@@ -15,7 +20,7 @@ public class Main {
         }
         catch (IOException | ClassNotFoundException | InvalidCatalogException | InvalidNameException e) {
             e.printStackTrace();
-        }
+        }*/
 
     }
 
@@ -31,7 +36,6 @@ public class Main {
         catalog.add(secondImage);
         catalog.add(thirdImage);
         catalog.add(movie);
-
         CatalogUtil.save(catalog);
     }
 

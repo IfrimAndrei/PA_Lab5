@@ -30,6 +30,13 @@ public abstract class Item implements Serializable {
         return location;
     }
 
+    @Override
+    public String toString( ) {
+        return "Item{" +
+                "name='" + name + '\'' +
+                ", location='" + location + '\'' +
+                '}';
+    }
 
-//…
+    //…
 }
