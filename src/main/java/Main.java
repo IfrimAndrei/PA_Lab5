@@ -12,7 +12,7 @@ public class Main {
         Shell myShell = new Shell();
         myShell.execute();
 
-         /*
+         /* Compulsory part
         Main app = new Main();
         try {
             app.testCreateSave();
